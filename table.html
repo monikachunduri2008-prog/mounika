@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://127.0.0.1:5500/My%20Documents/mounika7.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <title> table </title>
+</head>
+<body>
+  table border="1" cellspacing="2" 
+    <body>
+<tr>
+	<th> Name </th>
+    <th> Age </th>
+    <th> state </th>
+    <th>branch</th>
+</tr>
+<tr>
+    <td> mounika </td>
+    <td> 18 </td>
+    <td> ap </td>
+    <td> CSE 2 </td>
+ </tr>
+ <tr>
+    <td> srisha </td>
+    <td> 18 </td>
+    <td> mp </td>
+    <td> CSE 1 </td>
+ </tr>
+ <tr>
+    <td> neha </td>
+    <td> 18 </td>
+    <td> kerala </td>
+    <td> CSE 3 </td>
+ </tr>
+ <tr>
+    <td> nihitha </td>
+    <td> 18 </td>
+    <td> odisa </td>
+    <td> CSE 4 </td>
+ </tr>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</tbody></table></body></html>
